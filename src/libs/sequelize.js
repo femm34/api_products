@@ -3,6 +3,9 @@ const { config } = require("../config/database/config");
 const setupModels = require("./../database/models");
 
 console.log(config.dbName);
+console.log(config.dbUser);
+console.log(config.dbPassword);
+console.log(config.dbHost);
 
 const sequelize = new Sequelize(
   config.dbName,
