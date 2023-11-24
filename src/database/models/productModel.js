@@ -33,7 +33,7 @@ const productSchema = {
   },
   image: {
     allowNull: false,
-    type: DataTypes.BLOB,
+    type: DataTypes.BLOB("long"),
     field: "product_image",
   },
 };
