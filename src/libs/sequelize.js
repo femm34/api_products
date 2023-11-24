@@ -6,14 +6,16 @@ console.log(config.dbName);
 console.log(config.dbUser);
 console.log(config.dbPassword);
 console.log(config.dbHost);
+console.log(config.dbPort);
 
 const sequelize = new Sequelize(
   config.dbName,
   config.dbUser,
   config.dbPassword,
   {
-    host: config.dbHost,
     dialect: "mysql",
+    host: config.dbHost,
+    port: config.dbPort,
   }
 );
 
